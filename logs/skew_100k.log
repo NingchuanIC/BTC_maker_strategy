@@ -1,0 +1,141 @@
+======================================================================
+BACKTEST: Maker Strategy
+======================================================================
+Parameters:
+  strategy=skew
+  sample_n=100000
+  fill_model=touch
+  order_size=0.01
+  max_position=1.0
+  max_spread=5.0 bps
+  rebate_bps=-0.5 bps
+  vol_window=50
+  short_return_window=10
+  alpha=0.3
+
+📊 Loading data from D:\imperial_homework\third_year\other\q\okx ob btc 2026-01-processed...
+✓ Read BTC-USDT-SWAP-L2orderbook-400lv-2026-01-01.csv, cumulative 100000 rows
+
+✓ Sample data: 100000 rows
+
+
+📊 Data Sample:
+              ts  best_bid  best_bid_size  ...  best_ask_size       mid  spread
+0  1767225600014   87588.4           0.62  ...          21.41  87603.80    30.8
+1  1767225600024   87588.4           0.62  ...         125.70  87602.10    27.4
+2  1767225600034   87588.4           0.62  ...           8.90  87599.00    21.2
+3  1767225600044   87592.0          65.45  ...         229.97  87597.85    11.7
+4  1767225600054   87592.0          65.45  ...         229.97  87597.85    11.7
+5  1767225600064   87592.0          65.45  ...         229.97  87597.85    11.7
+6  1767225600074   87593.0         493.21  ...         229.97  87598.35    10.7
+7  1767225600084   87593.0         493.21  ...         229.97  87598.35    10.7
+8  1767225600094   87593.0         493.21  ...         116.75  87598.25    10.5
+9  1767225600104   87593.0         493.21  ...         116.75  87598.25    10.5
+
+[10 rows x 7 columns]
+
+Data Columns: ['ts', 'best_bid', 'best_bid_size', 'best_ask', 'best_ask_size', 'mid', 'spread']
+Data Types:
+ts                 int64
+best_bid         float64
+best_bid_size    float64
+best_ask         float64
+best_ask_size    float64
+mid              float64
+spread           float64
+dtype: object
+
+✓ Strategy created: SkewAwareMakerStrategy(alpha=0.3)
+✓ order_size=0.01, max_spread=5.0
+
+📈 Running backtest (first 100000 rows, fill_model=touch)...
+
+✓ Backtest completed! Total rows processed: 100000
+
+📊 Results Sample (first 10 rows):
+              ts       mid  spread  position      cash    equity  pnl
+0  1767225600014  87603.80    30.8       0.0  100000.0  100000.0  0.0
+1  1767225600024  87602.10    27.4       0.0  100000.0  100000.0  0.0
+2  1767225600034  87599.00    21.2       0.0  100000.0  100000.0  0.0
+3  1767225600044  87597.85    11.7       0.0  100000.0  100000.0  0.0
+4  1767225600054  87597.85    11.7       0.0  100000.0  100000.0  0.0
+5  1767225600064  87597.85    11.7       0.0  100000.0  100000.0  0.0
+6  1767225600074  87598.35    10.7       0.0  100000.0  100000.0  0.0
+7  1767225600084  87598.35    10.7       0.0  100000.0  100000.0  0.0
+8  1767225600094  87598.25    10.5       0.0  100000.0  100000.0  0.0
+9  1767225600104  87598.25    10.5       0.0  100000.0  100000.0  0.0
+
+📊 Results Sample (last 10 rows):
+                  ts       mid  spread  ...       cash         equity         pnl
+99990  1767226974182  87708.75     0.1  ...  56150.434  100526.530025  526.530025
+99991  1767226974192  87708.75     0.1  ...  56150.434  100526.530025  526.530025
+99992  1767226974202  87708.75     0.1  ...  56150.434  100526.530025  526.530025
+99993  1767226974212  87708.75     0.1  ...  56150.434  100526.530025  526.530025
+99994  1767226974222  87708.75     0.1  ...  56150.434  100526.530025  526.530025
+99995  1767226974232  87708.75     0.1  ...  56150.434  100526.530025  526.530025
+99996  1767226974242  87708.75     0.1  ...  56150.434  100526.530025  526.530025
+99997  1767226974252  87708.75     0.1  ...  56150.434  100526.530025  526.530025
+99998  1767226974262  87708.75     0.1  ...  56150.434  100526.530025  526.530025
+99999  1767226974272  87708.75     0.1  ...  56150.434  100526.530025  526.530025
+
+[10 rows x 7 columns]
+
+============================================================
+BACKTEST METRICS
+============================================================
+total_return                  :           0.53%
+total_pnl                     :          526.53
+total_rebate                  :          521.72
+total_turnover                :     10434420.49
+turnover_ratio                :          104.34
+final_position                :            0.50
+final_cash                    :        56150.43
+gross_pnl_without_rebate      :            4.81
+rebate_share                  :          99.09%
+inventory_pnl                 :            4.81
+inventory_pnl_ratio           :           0.91%
+pnl_without_rebate            :            4.81
+max_drawdown                  :          -0.03%
+calmar_ratio                  :        1645.71%
+average_position              :            0.45
+max_abs_position              :            0.54
+position_abs_mean             :            0.46
+position_mean                 :            0.45
+position_std                  :            0.13
+long_ratio                    :          98.16%
+short_ratio                   :           1.77%
+flat_ratio                    :           0.08%
+time_at_max_long              :           0.00%
+time_at_max_short             :           0.00%
+annualized_return             :           0.53%
+tick_sharpe                   :           4.65%
+number_of_trades              :           11900
+number_of_buy_trades          :            5975
+number_of_sell_trades         :            5925
+win_rate                      :          11.35%
+============================================================
+
+
+============================================================
+DEBUG STATISTICS
+============================================================
+Total rows: 100000
+Valid spread rows (0 < spread <= max_spread): 99980
+Valid spread ratio: 99.98%
+Orders generated count: 145985
+Buy orders: 46270
+Sell orders: 99715
+Total buy fills: 5975
+Total sell fills: 5925
+
+Strategy Debug:
+  Skipped due to spread: 19
+  Skipped buy due to position: 0
+  Skipped sell due to position: 0
+  Skipped buy due to signal: 53710
+  Skipped sell due to signal: 265
+============================================================
+
+✓ Figure saved: figs\skew_100k.png
+✓ Log saved: logs\skew_100k.log
+✓ Figure saved: figs\skew_100k.png

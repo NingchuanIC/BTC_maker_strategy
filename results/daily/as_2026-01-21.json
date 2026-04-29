@@ -1,0 +1,23 @@
+{
+  "date": "2026-01-21",
+  "strategy": "as",
+  "total_pnl": 512.5146943995933,
+  "total_rebate": 395.1931943999716,
+  "inventory_pnl": 117.32149999962166,
+  "rebate_share": 0.7710865634066105,
+  "turnover_ratio": 79.03863887999444,
+  "max_drawdown": -0.0003059953493819271,
+  "average_position": 0.09675919999992176,
+  "long_ratio": 0.61105,
+  "short_ratio": 0.37511,
+  "number_of_trades": 8937,
+  "win_rate": 0.08731087310873109,
+  "final_position": 0.07000000000004618,
+  "position_abs_mean": 0.3146245999999684,
+  "time_at_max_long": 0.00466,
+  "time_at_max_short": 0.00379,
+  "total_return": 0.005125146943995933,
+  "annualized_return": 0.005125146943995933,
+  "turnover": 7903863.887999443,
+  "rows": 100000
+}

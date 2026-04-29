@@ -1,0 +1,201 @@
+======================================================================
+BATCH BACKTEST: Maker Strategy
+======================================================================
+Date range: 2026-01-01 -> 2026-01-31
+Strategies: simple, inventory, as
+Results dir: results
+sample_n=1000
+fill_model=touch
+rebate_bps=-0.5
+
+======================================================================
+Running strategy: simple
+======================================================================
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-01.csv: 5420548 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-02.csv: 6161370 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-03.csv: 5543202 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-04.csv: 5852171 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-05.csv: 6649244 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-06.csv: 6395809 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-07.csv: 6327907 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-08.csv: 6880146 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-09.csv: 6393119 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-10.csv: 5185469 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-11.csv: 5319517 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-12.csv: 6540429 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-13.csv: 6669515 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-14.csv: 6857127 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-15.csv: 6718403 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-16.csv: 6095186 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-17.csv: 5297223 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-18.csv: 5378104 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-19.csv: 6275121 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-20.csv: 6837936 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-21.csv: 6933697 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-22.csv: 6477312 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-23.csv: 6399521 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-24.csv: 5340560 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-25.csv: 6131046 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-26.csv: 6750855 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-27.csv: 6414138 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-28.csv: 6505814 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-29.csv: 6448534 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-30.csv: 6982202 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-31.csv: 7028485 rows
+
+==============================
+SUMMARY REPORT
+==============================
+Strategy: simple
+Total Days: 31
+Mean PnL: 9.84
+Std PnL: 8.21
+Sharpe-like: 1.1986
+Win Rate: 87.10%
+Worst Day: -7.41
+Best Day: 34.98
+Rebate Dependency: 395.87%
+Inventory Contribution: -3.56
+Turnover: 2.68
+Position Bias: long=41.00%, short=56.12%
+Tail Risk: 0.75
+==============================
+
+Interpretation:
+- Stable profitability: yes
+- Rebate dependent: yes
+- Directional bias present: no
+- Tail risk elevated: no
+✓ Summary saved: results\summary\simple_summary.json
+✓ Summary CSV saved: results\summary\simple_summary.csv
+======================================================================
+Running strategy: inventory
+======================================================================
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-01.csv: 5420548 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-02.csv: 6161370 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-03.csv: 5543202 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-04.csv: 5852171 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-05.csv: 6649244 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-06.csv: 6395809 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-07.csv: 6327907 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-08.csv: 6880146 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-09.csv: 6393119 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-10.csv: 5185469 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-11.csv: 5319517 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-12.csv: 6540429 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-13.csv: 6669515 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-14.csv: 6857127 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-15.csv: 6718403 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-16.csv: 6095186 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-17.csv: 5297223 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-18.csv: 5378104 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-19.csv: 6275121 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-20.csv: 6837936 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-21.csv: 6933697 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-22.csv: 6477312 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-23.csv: 6399521 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-24.csv: 5340560 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-25.csv: 6131046 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-26.csv: 6750855 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-27.csv: 6414138 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-28.csv: 6505814 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-29.csv: 6448534 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-30.csv: 6982202 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-31.csv: 7028485 rows
+
+==============================
+SUMMARY REPORT
+==============================
+Strategy: inventory
+Total Days: 31
+Mean PnL: 8.75
+Std PnL: 5.48
+Sharpe-like: 1.5967
+Win Rate: 93.55%
+Worst Day: -5.98
+Best Day: 16.60
+Rebate Dependency: 189.38%
+Inventory Contribution: -4.11
+Turnover: 2.57
+Position Bias: long=41.08%, short=55.99%
+Tail Risk: 0.68
+==============================
+
+Interpretation:
+- Stable profitability: yes
+- Rebate dependent: yes
+- Directional bias present: no
+- Tail risk elevated: no
+✓ Summary saved: results\summary\inventory_summary.json
+✓ Summary CSV saved: results\summary\inventory_summary.csv
+======================================================================
+Running strategy: as
+======================================================================
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-01.csv: 5420548 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-02.csv: 6161370 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-03.csv: 5543202 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-04.csv: 5852171 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-05.csv: 6649244 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-06.csv: 6395809 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-07.csv: 6327907 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-08.csv: 6880146 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-09.csv: 6393119 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-10.csv: 5185469 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-11.csv: 5319517 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-12.csv: 6540429 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-13.csv: 6669515 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-14.csv: 6857127 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-15.csv: 6718403 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-16.csv: 6095186 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-17.csv: 5297223 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-18.csv: 5378104 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-19.csv: 6275121 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-20.csv: 6837936 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-21.csv: 6933697 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-22.csv: 6477312 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-23.csv: 6399521 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-24.csv: 5340560 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-25.csv: 6131046 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-26.csv: 6750855 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-27.csv: 6414138 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-28.csv: 6505814 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-29.csv: 6448534 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-30.csv: 6982202 rows
+✓ Loaded BTC-USDT-SWAP-L2orderbook-400lv-2026-01-31.csv: 7028485 rows
+
+==============================
+SUMMARY REPORT
+==============================
+Strategy: as
+Total Days: 31
+Mean PnL: 6.50
+Std PnL: 7.97
+Sharpe-like: 0.8161
+Win Rate: 80.65%
+Worst Day: -6.43
+Best Day: 34.27
+Rebate Dependency: 110.82%
+Inventory Contribution: 0.97
+Turnover: 1.11
+Position Bias: long=51.90%, short=44.03%
+Tail Risk: 0.99
+==============================
+
+Interpretation:
+- Stable profitability: yes
+- Rebate dependent: yes
+- Directional bias present: no
+- Tail risk elevated: no
+✓ Summary saved: results\summary\as_summary.json
+✓ Summary CSV saved: results\summary\as_summary.csv
+
+======================================================================
+COMPARISON SUMMARY
+======================================================================
+ strategy  mean_pnl  win_days_ratio  mean_rebate_share  mean_turnover
+   simple  9.839838        0.870968           3.958720       2.679164
+inventory  8.753801        0.935484           1.893764       2.572138
+       as  6.503220        0.806452           1.108233       1.106415
+✓ Comparison JSON saved: results\comparison_summary.json
+✓ Comparison CSV saved: results\comparison_summary.csv
+✓ Batch log saved: logs\batch_compare_1k.log
